@@ -39,6 +39,14 @@ int main(int argc, char *argv[]) {
             printf("%d * %d = %d\n", number1, number2, result);
             return 0;
         }
+        if (!strcmp("rest", argv[2])){
+            result = number1 % number2;
+            if( number2 == 0){
+                printf("Division by 0");
+            }
+            else printf("Rest: %d / %d = %d\n", number1, number2, result);
+            return 0;
+        }
     }
 
     usage(argv[0]);
